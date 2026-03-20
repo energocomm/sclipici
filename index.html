@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ever Flowers | Flori handmade premium si buchete la comanda in orasul Ialoveni</title>
+
+  <link rel="icon" type="image/png" href="../site-Flowers/photo/icon (2).png">
+  <script src="../site-Flowers/JavaScript/flori.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/flowers.css" />
+
+  <meta name="description" content="Ever Flowers – flori artificiale premium, buchete personalizate, cadouri florale durabile în Chișinău, Moldova. Comandă buchete elegante pentru orice ocazie.">
+  <meta name="keywords" content="Ever Flowers, flori artificiale, buchete flori, buchete Chișinău, flori Moldova, flori cadou, buchete personalizate, flori durabile, flori elegante, flower shop Moldova, artificial flowers Moldova">
+</head>
+
+<body>
+  <button type="button" onclick="topFunction()" id="myBtn" title="Go to top" class="myBtn" aria-label="Înapoi sus">↑</button>
+
+  <header class="site-header" id="siteHeader" role="banner">
+    <div class="sparkle-layer" id="headerSparkles" aria-hidden="true"></div>
+
+    <div class="header-left">
+      <a href="#home" class="header-logo-link" aria-label="Înapoi la început">
+        <img src="./photo/logo.png" alt="Logo Ever Flowers" class="header-logo">
+      </a>
+    </div>
+
+    <button class="hamburger" id="ham" aria-label="Meniu" aria-expanded="false" aria-controls="nav" type="button">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="header-nav" id="nav" aria-label="Navigare principală">
+      <a href="#despre">Despre</a>
+      <a href="#price">Prețuri</a>
+      <a href="#buchete">Buchete</a>
+      <a href="#personalizat">Personalizat</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="cart-toggle" id="cartToggle" type="button" aria-label="Deschide coșul" aria-expanded="false">
+      <span class="cart-icon-symbol">🛒</span>
+      <span class="cart-badge" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <div class="cart-panel" id="cartPanel" aria-label="Coș de cumpărături" hidden>
+    <div class="cart-panel-inner">
+      <div class="cart-panel-top">
+        <h3>Coșul meu</h3>
+        <button type="button" class="cart-close" id="cartClose" aria-label="Închide coșul">×</button>
+      </div>
+
+      <div id="cartItems">Coșul este gol.</div>
+
+      <div class="cart-total-box">
+        <div class="cart-total-line">
+          <strong>Total coș:</strong>
+          <strong id="cartTotal">0 lei</strong>
+        </div>
+      </div>
+
+      <div class="cart-actions">
+        <button type="button" class="more-btn" id="cartCheckoutBtn" disabled>
+          Checkout
+        </button>
+
+        <button type="button" class="more-btn" id="clearCartBtn">
+          Golește coșul
+        </button>
+      </div>
+
+      <p id="cartHint" class="cart-hint">Adaugă buchete în coș pentru a continua.</p>
+    </div>
+  </div>
+
+  <main class="page-content" id="main">
+    <header class="hero" id="home">
+      <img src="./photo/logo.png" alt="Logo Ever Flowers" class="hero-logo">
+
+      <nav class="hero-nav" id="heroNav" aria-label="Navigare pe pagina principală">
+        <a href="#despre">Despre</a>
+        <a href="#price">Prețuri</a>
+        <a href="#buchete">Buchete</a>
+        <a href="#personalizat">Personalizat</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="social" aria-label="Rețele de socializare">
+        <a class="social-link" href="https://www.tiktok.com/@everflowers.md" target="_blank" rel="noopener" aria-label="TikTok (se deschide într-o filă nouă)">
+          <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+          <span class="social-name">TikTok</span>
+        </a>
+
+        <a class="social-link" href="https://www.instagram.com/everflowers.md/" target="_blank" rel="noopener" aria-label="Instagram (se deschide într-o filă nouă)">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          <span class="social-name">Instagram</span>
+        </a>
+
+        <a class="social-link" href="https://www.facebook.com/profile.php?id=61575808888338&locale=ro_RO" target="_blank" rel="noopener" aria-label="Facebook (se deschide într-o filă nouă)">
+          <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          <span class="social-name">Facebook</span>
+        </a>
+      </div>
+
+      <div class="hero-center">
+        <h1>Ever Flowers</h1>
+        <p>FLORI CARE DUREAZĂ, AMINTIRI<br>CARE RĂMÂN...</p>
+      </div>
+
+    </header>
+
+    <div class="section-box">
+      <h2>Despre noi</h2>
+    </div>
+
+    <section class="parallax p1" id="despre" aria-labelledby="despre-title">
+      <div class="p-content fade">
+        <p id="despre-title">
+          Proiectul nostru a pornit din pasiunea pentru lucrul manual și frumusețea
+          detaliilor. Florile din satin sunt realizate individual, cu răbdare și grijă,
+          pentru a crea o alternativă durabilă la florile naturale — una care păstrează
+          emoția și eleganța în timp.
+        </p>
+        <a href="../site-Flowers/pagini/despre.html" class="more-btn">Vezi mai mult</a>
+      </div>
+    </section>
+
+    <div class="section-box">
+      <h2>Prețurile</h2>
+    </div>
+
+    <section class="parallax p2" id="price" aria-label="Prețuri">
+      <div class="p-content fade">
+        <div class="price-slider">
+          <div class="price-track" id="priceTrack">
+            <div class="price-slide">
+              <h1>Flori din satin</h1>
+              <p>
+                Trandafir (închis)...........17 lei <br>
+                Trandafir (înflorit).........15 lei <br>
+                Dalie........................25 lei<br>
+                Plumeria.....................12 lei
+              </p>
+            </div>
+
+            <div class="price-slide">
+              <h1>Flori din sârmă plușată</h1>
+              <p>
+                Crin....................... 30 lei <br>
+                Nufăr (cu luminițe,frunză,2 culori de petale).. 150 lei<br>
+                Romaniță.................... 7 lei<br>
+                Lalea................... 35 lei
+              </p>
+            </div>
+
+            <div class="price-slide">
+              <h1>Accesorii</h1>
+              <p>
+                Perle.............. 1leu/floare <br>
+                Fluturi/coronițe............. 5 lei<br>
+                Fundă................  7lei<br>
+                Mătase perlată.............. în dependență de buchet<br>
+                Sclipici.............. 3 lei/floare<br>
+                Luminițe..................15 lei/buc
+              </p>
+            </div>
+          </div>
+
+          <button class="price-arrow left" type="button" onclick="pricePrev()" aria-label="Prețuri anterioare">‹</button>
+          <button class="price-arrow right" type="button" onclick="priceNext()" aria-label="Prețuri următoare">›</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-box">
+      <h2>Buchete</h2>
+    </div>
+
+    <section class="parallax p4" id="buchete" aria-label="Buchete">
+      <div class="p-content fade">
+        <div class="grid-4">
+          <article class="card">
+            <div class="img-box">
+              <img src="../site-Flowers/photo/flori.acoperis.jpg" alt="Buchet flori satin roz și bej">
+            </div>
+            <h4 class="title"></h4>
+            <p class="price">560 lei</p>
+            <p class="desc">
+              Buchet realizat din flori de satin. 4 dalii în nuanța roz și
+              29 trandafiri deschiși în nuanța bej.
+            </p>
+            <button class="btn add-to-cart" type="button" data-name="Buchet satin (roz + bej)" data-price="560">
+              Adaugă în coș
+            </button>
+          </article>
+
+          <article class="card">
+            <div class="img-box">
+              <img src="../site-Flowers/photo/flori.inima.jpg" alt="Buchet inimă alb și roșu">
+            </div>
+            <h4 class="title"></h4>
+            <p class="price">230 lei</p>
+            <p class="desc">
+              Buchet în formă de inimă realizat din flori de satin. 3 trandafiri deschiși
+              în nuanțan alb și 10 în nuanța roșu. 2 coronițe și perle.
+            </p>
+            <button class="btn add-to-cart" type="button" data-name="Buchet inimă (alb + roșu)" data-price="230">
+              Adaugă în coș
+            </button>
+          </article>
+
+          <article class="card">
+            <div class="img-box">
+              <img src="../site-Flowers/photo/flori.omat.jpeg" alt="Buchet plumeria vișiniu și roz">
+            </div>
+            <h4 class="title"></h4>
+            <p class="price">120 lei</p>
+            <p class="desc">
+              Buchet realizat din flori de satin. O plumerie în 2 culori: vișiniu, roz și
+              6 trandafiri deschiși în nuanțele vișinii și roz.
+            </p>
+            <button class="btn add-to-cart" type="button" data-name="Buchet plumeria (vișiniu + roz)" data-price="120">
+              Adaugă în coș
+            </button>
+          </article>
+
+          <article class="card">
+            <div class="img-box">
+              <img src="../site-Flowers/photo/flori.pat.jpeg" alt="Buchet satin roz și bej cu fluturi">
+            </div>
+            <h4 class="title"></h4>
+            <p class="price">300 lei</p>
+            <p class="desc">
+              Buchet realizat din flori de satin. 19 trandafiri deschiși în nuanțe roz și bej,
+              2 fluturi aurii și perle.
+            </p>
+            <button class="btn add-to-cart" type="button" data-name="Buchet satin (roz + bej) cu fluturi" data-price="300">
+              Adaugă în coș
+            </button>
+          </article>
+        </div>
+      </div>
+
+      <div class="see-more-wrap" id="seeMoreBtn">
+        <a href="./pagini/buchete.html" class="see-more-btn">Vezi mai mult</a>
+      </div>
+    </section>
+
+    <div class="section-box">
+      <h2>Personalizat</h2>
+    </div>
+
+    <section class="parallax p3" id="personalizat" aria-label="Personalizează buchetul">
+      <div class="p-content fade">
+        <h3 class="pers-title">Personalizează buchetul</h3>
+        <p class="pers-sub">Completează cantitățile — totalul se calculează automat (lei).</p>
+
+        <div class="pers-chart">
+          <details class="pers-item" open>
+            <summary class="pers-btn">
+              <span>Flori din satin</span>
+              <span class="pers-arrow">▾</span>
+            </summary>
+
+            <div class="pers-body">
+              <div class="row">
+                <span>Trandafir (închis) — 17 lei</span>
+                <input class="qty" type="number" min="0" value="0" inputmode="numeric" data-item="rose_closed" aria-label="Trandafir închis cantitate">
+              </div>
+
+              <div class="row">
+                <span>Trandafir (înflorit) — 15 lei</span>
+                <input class="qty" type="number" min="0" value="0" inputmode="numeric" data-item="rose_open" aria-label="Trandafir înflorit cantitate">
+              </div>
+
+              <div class="row">
+                <span>Dalie — 25 lei</span>
+                <input class="qty" type="number" min="0" value="0" inputmode="numeric" data-item="dahlia" aria-label="Dalie cantitate">
+              </div>
+
+              <div class="row">
+                <span>Plumeria — 12 lei</span>
+                <input class="qty" type="number" min="0" value="0" inputmode="numeric" data-item="plumeria" aria-label="Plumeria cantitate">
+              </div>
+            </div>
+          </details>
+
+          <details class="pers-item">
+            <summary class="pers-btn">
+              <span>Flori din sârmă plușată</span>
+              <span class="pers-arrow">▾</span>
+            </summary>
+
+            <div class="pers-body">
+              <div class="row">
+                <span>Crin — 30 lei</span>
+                <input class="qty" type="number" min="0" value="0" inputmode="numeric" data-item="lily" aria-label="Crin cantitate">
+              </div>
+
+              <div class="row">
+                <span>Romaniță — 7 lei</span>
+                <input class="qty" type="number" min="0" value="0" inputmode="numeric" data-item="daisy" aria-label="Romaniță cantitate">
+              </div>
+
+              <div class="row">
+                <span>Lalea — 35 lei</span>
+                <input class="qty" type="number" min="0" value="0" inputmode="numeric" data-item="tulip" aria-label="Lalea cantitate">
+              </div>
+
+              <div class="row">
+                <span>Nufăr (cu luminițe...) — 150 lei</span>
+                <input class="qty" type="number" min="0" value="0" inputmode="numeric" data-item="waterlily_lights" aria-label="Nufăr cu luminițe cantitate">
+              </div>
+            </div>
+          </details>
+
+          <details class="pers-item">
+            <summary class="pers-btn">
+              <span>Accesorii</span>
+              <span class="pers-arrow">▾</span>
+            </summary>
+
+            <div class="pers-body">
+              <div class="row">
+                <span>Perle — 1 leu / floare</span>
+                <label class="switch">
+                  <input type="checkbox" id="accPearls" aria-label="Aplică perle">
+                  <span>Aplică</span>
+                </label>
+              </div>
+
+              <div class="row">
+                <span>Fluturi / coronițe — 5 lei</span>
+                <input class="qty" type="number" min="0" value="0" inputmode="numeric" data-item="butterflies" aria-label="Fluturi coronițe cantitate">
+              </div>
+
+              <div class="row">
+                <span>Fundă — 7 lei</span>
+                <input class="qty" type="number" min="0" value="0" inputmode="numeric" data-item="bow" aria-label="Fundă cantitate">
+              </div>
+
+              <div class="row">
+                <span>Sclipici — 3 lei / floare</span>
+                <label class="switch">
+                  <input type="checkbox" id="accGlitter" aria-label="Aplică sclipici">
+                  <span>Aplică</span>
+                </label>
+              </div>
+
+              <div class="row">
+                <span>Luminițe — 15 lei</span>
+                <input class="qty" type="number" min="0" value="0" inputmode="numeric" data-item="lights" aria-label="Luminițe cantitate">
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <div class="pers-total" aria-live="polite">
+          <div class="pers-total-line">
+            <strong>Total:</strong>
+            <strong id="persTotal">0 lei</strong>
+          </div>
+          <div class="pers-break" id="persBreak">• Alege cantități ca să vezi calculul.</div>
+        </div>
+
+        <button type="button" class="more-btn checkout-btn" id="checkoutBtn" disabled>
+          Trimite comanda
+        </button>
+        <p class="pers-note" id="checkoutHint" style="margin-top:10px;"></p>
+          <a href="./pagini/personalizat.html" class="more-btn more-options-btn">
+            Mai multe opțiuni
+          </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Contact rapid">
+    <div class="sparkle-layer" id="footerSparkles" aria-hidden="true"></div>
+    <div class="footer-content">
+      <span>everflowers.md@gmail.com</span>
+      <span>+373 780 57 538</span>
+    </div>
+  </footer>
+
+  <footer class="contact-footer" id="contact" aria-label="Contact">
+    <div class="contact-box" id="bigfooter">
+      <p>everflowers.md@gmail.com</p>
+      <p>+373 780 57 538</p>
+      <p>Ialoveni, Moldova</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4324.172246107874!2d28.775045415618898!3d46.94090347376738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97f5f6ac799d9%3A0xe1cf2f65e3684003!2sLiceul%20Teoretic%20%E2%80%9EPetre%20Stefanuca%E2%80%9D!5e0!3m2!1sen!2s!4v1771583318999!5m2!1sen!2s"
+        width="400"
+        height="200"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+      <p class="disclaimer">
+        Acest website a fost realizat în cadrul competiției "Tekwill Junior Ambassador" organizată de proiectul ”Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului.
+      </p>
+    </div>
+  </footer>
+
+  <div class="checkout-modal" id="checkoutModal" hidden>
+    <div class="checkout-overlay" id="checkoutOverlay"></div>
+
+    <div class="checkout-box" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+      <button type="button" class="checkout-close" id="checkoutClose" aria-label="Închide">×</button>
+
+      <h3 id="checkoutTitle">Plată cu cardul</h3>
+      <p class="checkout-sub">Checkout simulativ pentru buchetele cu preț fix.</p>
+
+      <div class="checkout-summary" id="checkoutSummary"></div>
+
+      <form id="checkoutForm" class="checkout-form">
+        <label>
+          Nume pe card
+          <input type="text" id="cardName" placeholder="Ex: Maria Popescu" required>
+        </label>
+
+        <label>
+          Număr card
+          <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+        </label>
+
+        <div class="checkout-row">
+          <label>
+            Expirare
+            <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5" required>
+          </label>
+
+          <label>
+            CVV
+            <input type="password" id="cardCvv" placeholder="123" maxlength="4" required>
+          </label>
+        </div>
+
+        <div class="checkout-total-line">
+          <strong>Total:</strong>
+          <strong id="checkoutTotal">0 lei</strong>
+        </div>
+
+        <button type="submit" class="more-btn checkout-pay-btn">
+          Plătește
+        </button>
+      </form>
+
+      <p class="checkout-note" id="checkoutMessage"></p>
+    </div>
+  </div>
+
+  <div class="mail-platform-modal" id="mailPlatformModal" hidden>
+    <div class="mail-platform-overlay" id="mailPlatformOverlay"></div>
+
+    <div class="mail-platform-box" role="dialog" aria-modal="true" aria-labelledby="mailPlatformTitle">
+      <button type="button" class="mail-platform-close" id="mailPlatformClose" aria-label="Închide">×</button>
+
+      <h3 id="mailPlatformTitle">Alege platforma de email</h3>
+      <p class="mail-platform-sub">Selectează cum vrei să trimiți comanda personalizată.</p>
+
+      <div class="mail-platform-actions">
+        <button type="button" class="more-btn mail-option" data-mail="gmail">Gmail</button>
+        <button type="button" class="more-btn mail-option" data-mail="outlook">Outlook</button>
+        <button type="button" class="more-btn mail-option" data-mail="yahoo">Yahoo</button>
+        <button type="button" class="more-btn mail-option" data-mail="default">Aplicația implicită</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

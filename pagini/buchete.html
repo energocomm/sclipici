@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EverFlowers | Buchete</title>
+
+  <link rel="icon" type="image/png" href="../photo/icon (2).png">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/buchete.css" />
+  <script src="../JavaScript/buchete.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="header-left">
+      <a href="../index.html#home" class="header-logo-link" aria-label="Înapoi la început">
+        <img src="../photo/logo.png" alt="Logo Ever Flowers" class="header-logo">
+      </a>
+    </div>
+
+    <button class="hamburger" id="ham" aria-label="Meniu" aria-expanded="false" aria-controls="nav" type="button">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="header-nav" id="nav" aria-label="Navigare principală">
+      <a href="../index.html#despre">Despre</a>
+      <a href="../index.html#price">Prețuri</a>
+      <a href="../index.html#personalizat">Personalizat</a>
+      <a href="../index.html#buchete">Buchete</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+
+    <button class="cart-toggle" id="cartToggle" type="button" aria-label="Deschide coșul" aria-expanded="false">
+      🛒
+      <span class="cart-badge" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <div class="cart-panel" id="cartPanel" aria-label="Coș de cumpărături" hidden>
+    <div class="cart-panel-inner">
+      <div class="cart-panel-top">
+        <h3>Coșul meu</h3>
+        <button type="button" class="cart-close" id="cartClose" aria-label="Închide coșul">×</button>
+      </div>
+
+      <div id="cartItems">Coșul este gol.</div>
+
+      <div class="cart-total-box">
+        <div class="cart-total-line">
+          <strong>Total coș:</strong>
+          <strong id="cartTotal">0 lei</strong>
+        </div>
+      </div>
+
+      <div class="cart-actions">
+        <button type="button" class="buy-btn cart-checkout-btn" id="cartCheckoutBtn" disabled>
+          Checkout
+        </button>
+
+        <button type="button" class="buy-btn cart-clear-btn" id="clearCartBtn">
+          Golește coșul
+        </button>
+      </div>
+
+      <p id="cartHint" class="cart-hint">Adaugă produse în coș pentru a continua.</p>
+    </div>
+  </div>
+
+  <div class="page">
+    <header class="header">
+      <h1 class="title">Buchete</h1>
+    </header>
+
+    <main class="list">
+      <section class="card">
+        <div class="photo-wrap">
+          <img class="photo" src="../photo/buchet.albastru.jpeg" alt="Buchet albastru">
+          <button class="buy-btn add-to-cart" type="button" data-name="Buchet albastru" data-price="150">
+            Adaugă în coș
+          </button>
+        </div>
+
+        <div class="info">
+          <div class="price">150 lei</div>
+          <div class="old-price">190 lei</div>
+          <p class="desc">Buchet realizat din flori de satin. 7 dalii in 2 nuanțe de albastru.</p>
+        </div>
+
+        <div class="sale-wrap">
+          <div class="sale">SALE</div>
+        </div>
+      </section>
+
+      <section class="card card-right">
+        <div class="info">
+          <div class="price black">160 lei</div>
+          <p class="desc">Buchet realizat din flori de satin. 11 trandafiri deschiși în nuanța de albastru și roșu.</p>
+        </div>
+
+        <div class="photo-wrap">
+          <img class="photo" src="../photo/buchetrosu.jpeg" alt="Buchet roșu">
+          <button class="buy-btn add-to-cart" type="button" data-name="Buchet roșu-albastru" data-price="160">
+            Adaugă în coș
+          </button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="photo-wrap">
+          <img class="photo" src="../photo/buchetcos.jpg" alt="Coș cu flori">
+          <button class="buy-btn add-to-cart" type="button" data-name="Coș cu flori satin" data-price="1300">
+            Adaugă în coș
+          </button>
+        </div>
+
+        <div class="info">
+          <div class="price black">1300 lei</div>
+          <p class="desc">Coș cu flori din satin. 82 trandafiri deschiși în nuanțe de roz, violet și alb.</p>
+        </div>
+      </section>
+
+      <section class="card card-right">
+        <div class="info">
+          <div class="price black">150 lei</div>
+          <p class="desc">Buchet realizat din flori de satin. O dalie albastru și 7 trandafiri roz. 2 fluturi aurii și perle.</p>
+        </div>
+
+        <div class="photo-wrap">
+          <img class="photo" src="../photo/buchetrozalbastru.jpeg" alt="Buchet roz-albastru">
+          <button class="buy-btn add-to-cart" type="button" data-name="Buchet roz-albastru" data-price="150">
+            Adaugă în coș
+          </button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="photo-wrap">
+          <img class="photo" src="../photo/caldari.jpeg" alt="Set flori">
+          <button class="buy-btn add-to-cart" type="button" data-name="Set flori de 5" data-price="800">
+            Adaugă în coș
+          </button>
+        </div>
+
+        <div class="info">
+          <div class="price black">800 lei tot setul de 5</div>
+          <p class="desc">Set realizat din flori de satin cu dalii, trandafiri, luminițe și romanițe agățătoare.</p>
+        </div>
+      </section>
+
+      <section class="card card-right">
+        <div class="info">
+          <div class="price black">1100 lei</div>
+          <p class="desc">Buchet realizat din flori de satin. 31 trandafiri roz simpli și 30 cu sclipici. Coroniță 3D și luminițe.</p>
+        </div>
+
+        <div class="photo-wrap">
+          <img class="photo" src="../photo/funal.png" alt="Buchet mare">
+          <button class="buy-btn add-to-cart" type="button" data-name="Buchet mare cu luminițe" data-price="1100">
+            Adaugă în coș
+          </button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="photo-wrap">
+          <img class="photo" src="../photo/violetgri.jpeg" alt="Coș violet-gri">
+          <button class="buy-btn add-to-cart" type="button" data-name="Coș violet-gri" data-price="300">
+            Adaugă în coș
+          </button>
+        </div>
+
+        <div class="info">
+          <div class="price black">300 lei</div>
+          <p class="desc">Coș cu flori din satin în nuanțe de roz, violet și alb.</p>
+        </div>
+      </section>
+
+      <section class="card card-right">
+        <div class="info">
+          <div class="price black">370 lei</div>
+          <p class="desc">Buchet cu plumerie vișinie, trandafiri bej și trandafiri roșii.</p>
+        </div>
+
+        <div class="photo-wrap">
+          <img class="photo" src="../photo/flori.omat.jpeg" alt="Buchet vișiniu cu bej și roșu">
+          <button class="buy-btn add-to-cart" type="button" data-name="Buchet vișiniu cu bej și roșu" data-price="370">
+            Adaugă în coș
+          </button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="photo-wrap">
+          <img class="photo" src="../photo/nufar (2).jpg" alt="Nufăr">
+          <button class="buy-btn add-to-cart" type="button" data-name="Nufăr cu luminițe" data-price="150">
+            Adaugă în coș
+          </button>
+        </div>
+
+        <div class="info">
+          <div class="price black">150 lei</div>
+          <p class="desc">Nufăr din sârmă plușată, frunză verde, petale alb-roz și luminițe ca stamine.</p>
+        </div>
+      </section>
+
+      <section class="card card-right">
+        <div class="info">
+          <div class="price black">160 lei</div>
+          <p class="desc">Găleată personalizată cu dalii tricolor, romanițe agățătoare roz/alb și luminițe.</p>
+        </div>
+
+        <div class="photo-wrap">
+          <img class="photo" src="../photo/tricolor.jpg" alt="Găleată tricolor">
+          <button class="buy-btn add-to-cart" type="button" data-name="Găleată tricolor" data-price="160">
+            Adaugă în coș
+          </button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="photo-wrap">
+          <img class="photo" src="../photo/primul.jpg" alt="Buchet multicolor">
+          <button class="buy-btn add-to-cart" type="button" data-name="Buchet multicolor" data-price="100">
+            Adaugă în coș
+          </button>
+        </div>
+
+        <div class="info">
+          <div class="price">100 lei</div>
+          <div class="old-price">130 lei</div>
+          <p class="desc">Buchet cu 13 trandafiri multicolori, perle și coroniță 3D.</p>
+        </div>
+
+        <div class="sale-wrap">
+          <div class="sale">SALE</div>
+        </div>
+      </section>
+
+      <section class="card card-right">
+        <div class="info">
+          <div class="price black">60 lei</div>
+          <p class="desc">Pix în formă de trandafir cu perlă în centru.</p>
+        </div>
+
+        <div class="photo-wrap">
+          <img class="photo" src="../photo/pix.jpg" alt="Pix trandafir">
+          <button class="buy-btn add-to-cart" type="button" data-name="Pix trandafir" data-price="60">
+            Adaugă în coș
+          </button>
+        </div>
+      </section>
+
+      <button id="heartsToggle" class="hearts-toggle" type="button">💖 Inimi: Pornit</button>
+    </main>
+  </div>
+
+  <div class="checkout-modal" id="checkoutModal" hidden>
+    <div class="checkout-overlay" id="checkoutOverlay"></div>
+
+    <div class="checkout-box" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+      <button type="button" class="checkout-close" id="checkoutClose" aria-label="Închide">×</button>
+
+      <h3 id="checkoutTitle">Plată cu cardul</h3>
+      <p class="checkout-sub">Checkout simulativ pentru produsele din coș.</p>
+
+      <div class="checkout-summary" id="checkoutSummary"></div>
+
+      <form id="checkoutForm" class="checkout-form">
+        <label>
+          Nume pe card
+          <input type="text" id="cardName" placeholder="Ex: Maria Popescu" required>
+        </label>
+
+        <label>
+          Număr card
+          <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+        </label>
+
+        <div class="checkout-row">
+          <label>
+            Expirare
+            <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5" required>
+          </label>
+
+          <label>
+            CVV
+            <input type="password" id="cardCvv" placeholder="123" maxlength="4" required>
+          </label>
+        </div>
+
+        <div class="checkout-total-line">
+          <strong>Total:</strong>
+          <strong id="checkoutTotal">0 lei</strong>
+        </div>
+
+        <button type="submit" class="buy-btn checkout-pay-btn">
+          Plătește
+        </button>
+      </form>
+
+      <p class="checkout-note" id="checkoutMessage"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <span>everflowers.md@gmail.com</span>
+      <span>+373 780 57 538</span>
+    </div>
+  </footer>
+
+  <p class="site-disclaimer">
+    Acest website a fost realizat în cadrul competiției "Tekwill Junior Ambassador"
+    organizată de proiectul ”Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului.
+  </p>
+</body>
+</html>
